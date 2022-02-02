@@ -1,0 +1,19 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: var(--base) var(--base);
+    padding: var(--base);
+
+    @media (min-width: 479px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 767px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width: 1023px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

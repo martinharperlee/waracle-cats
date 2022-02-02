@@ -1,0 +1,40 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 0;
+    z-index: 1;
+    padding: calc(var(--base));
+    display: flex;
+    align-items: flex-start;
+
+    &__link {
+        display: block;
+        border-radius: 50%;
+        background-color: var(--color-sage);
+        margin-right: calc(var(--base) / 2);
+        padding: var(--base) var(--base);
+        transition: background-color 0.4s;
+        height: calc(var(--base) * 4.5);
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-light);
+        }
+    }
+
+    &__icon {
+        width: calc(var(--base) * 2.5);
+        height: calc(var(--base) * 2.5);
+        fill: var(--color-dark);
+    }
+
+    &--isLoading {
+        .navbar__cat {
+            animation-name: spin;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.favourite {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    z-index: 3;
+    background-color: transparent;
+    box-shadow: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: calc(var(--base) * -2);
+    cursor: pointer;
+    transition: transform 0.4s;
+
+    &__icon {
+        box-sizing: content-box;
+        padding: calc(var(--base) * 2.5) calc(var(--base) * 2.5)
+            calc(var(--base) / 2);
+        font-size: calc(var(--base) * 1.8);
+        background-color: var(--color-sage);
+        color: var(--color-dark);
+        border-radius: 0 0 50% 50%;
+        transition: all 0.4s;
+    }
+
+    &:hover {
+        transform: translateY(var(--base));
+    }
+
+    &:hover,
+    &:focus {
+        .favourite__icon {
+            background-color: var(--color-light);
+        }
+    }
+
+    &--loading {
+        .favourite__icon {
+            animation: pulse 2s infinite;
+        }
+    }
+}
