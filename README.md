@@ -1,9 +1,12 @@
-# Cats Challenge
+# Waracle Cats
 
-[cats-developer-test.netlify.app](https://cats-developer-test.netlify.app)
+[waracle-cats.netlify.app](https://waracle-cats.netlify.app)
+
+Developer test for Waracle, notes below on technologies deployed
 
 ### Javscript: 
 Create React App - React, Redux, Redux Toolkit, Typescript
+
 Notable packages - nanoid, react-dropzone, react-icons, react-router-dom
 
 ### CSS:
@@ -13,20 +16,23 @@ SASS & BEM - chosen to demonstrates knowledge of css methodologies, could have a
 Jest - A simple set of unit tests for component logic
 
 ### Performace:
-When considering performance the additional practices have been deployed
-Lazy loading CSS & Javascript bundles dependant on route
-Lazy loading images
-Lighthouse testing
+When considering performance the additional practices have been deployed;
+
+- Lazy loading CSS & Javascript bundles dependant on route
+- Lazy loading images
+- Lighthouse testing
 
 ### Accessibility:
-When considering accessibility the additional practices have been deployed
-Aria labels on all user elements
-Focus states on all interactive elements
-Landmarks added
-Lighthouse testing
+When considering accessibility the additional practices have been deployed;
+
+- Aria labels on all user elements
+- Focus states on all interactive elements
+- Landmarks added
+- Lighthouse testing
 
 ### Support:
 This test has been built without the requirments of legacy browsers support, its been tested on the latest versions of;
+
 - Chrome Mac Desktop
 - Chrome Android
 - Safari Mac Desktop
@@ -34,12 +40,12 @@ This test has been built without the requirments of legacy browsers support, its
 ## Project setup
 Installs dependencies, basic setup using parcel-bundler
 
-### `yarn`
+#### `yarn`
 
 Please add .env.local file to the project this must contain the following, with you own api key
 
-### `REACT_APP_API_KEY=XXXX`
-### `REACT_APP_API_BASE_URL=https://api.thecatapi.com/v1`
+#### `REACT_APP_API_KEY=XXXX`
+#### `REACT_APP_API_BASE_URL=https://api.thecatapi.com/v1`
 
 This does not stop the API key being compiled within the Javascript but does mean the key is not committed to GitHub. A real world app should have the key loaded via the server.
 
@@ -47,15 +53,15 @@ This does not stop the API key being compiled within the Javascript but does mea
 
 In the project directory, you can run:
 
-### `yarn start`
+#### `yarn start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `yarn test`
+#### `yarn test`
 
 Launches the test runner in the interactive watch mode.
 
-### `yarn build`
+#### `yarn build`
 
 Builds the app for production to the `build` folder
