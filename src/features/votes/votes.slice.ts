@@ -103,9 +103,8 @@ export const votesSlice = createSlice({
     },
 });
 
-const getVoteValue = (current: number, data: number): number => {
-    return data === 1 ? current + 1 : current - 1;
-};
+const getVoteValue = (current: number, data: number): number =>
+    data === 1 ? current + 1 : current - 1;
 
 export const selectVoteCount =
     (imageId: string) =>

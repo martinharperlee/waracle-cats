@@ -1,3 +1,3 @@
-import { Statuses as us } from '../enums/status';
+import { Statuses as s } from '../enums/status';
 
-export type Status = us.INITIAL | us.ERROR | us.LOADING | us.SUCCESS;
+export type Status = s.INITIAL | s.ERROR | s.LOADING | s.SUCCESS;

@@ -5,7 +5,11 @@ import Routes from './Routes';
 
 describe('<Routes />', () => {
     it('render routes', () => {
-        const wrapper = mount(<Router><Routes /></Router>);
+        const wrapper = mount(
+            <Router>
+                <Routes />
+            </Router>
+        );
         expect(wrapper.find('Suspense').exists()).toBeTruthy();
         expect(wrapper.find(Routes).exists()).toBeTruthy();
     });

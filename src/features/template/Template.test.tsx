@@ -5,7 +5,7 @@ import NavBar from '../navbar/NavBar';
 import { Routes } from 'react-router-dom';
 
 describe('<Template />', () => {
-    it('render template components', () => {
+    it('render template', () => {
         const wrapper = shallow(<Template />);
         expect(wrapper.find(NavBar)).toBeTruthy();
         expect(wrapper.find(Routes)).toBeTruthy();

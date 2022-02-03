@@ -27,7 +27,7 @@ export const Cat: React.FC<CatProps> = ({ id, url }) => {
                     src={url}
                     alt={`cat id: ${id}`}
                     className="cat__image"
-                    loading='lazy'
+                    loading="lazy"
                     width="455"
                     height="455"
                     onLoad={() => setLoaded(true)}

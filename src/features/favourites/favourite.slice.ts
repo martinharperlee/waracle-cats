@@ -9,7 +9,7 @@ import { Favourite } from '../../types/favourite.type';
 import { Status } from '../../types/status.type';
 import { Statuses } from '../../enums/status';
 
-export interface FavouritesState {
+export interface FavouriteState {
     data: Favourite[];
     changeStatus: {
         [key: string]: Status;
@@ -21,7 +21,7 @@ interface ChangeDispatch {
     id: number;
 }
 
-const initialState: FavouritesState = {
+const initialState: FavouriteState = {
     data: [],
     changeStatus: {},
 };
@@ -40,7 +40,7 @@ export const deleteFav = createAsyncThunk(
     async ({ imageId, id }: ChangeDispatch) => deleteFavourite(id)
 );
 
-const normaliseFavourites = (favourites: Favourite[]) =>
+export const normaliseFavourites = (favourites: Favourite[]) =>
     favourites.map((fav: Favourite) => ({
         id: fav.id,
         image_id: fav.image_id,
