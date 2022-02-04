@@ -37,6 +37,16 @@ This test has been built without the requirments of legacy browsers support, its
 - Chrome Android
 - Safari Mac Desktop
 
+### Possible improvments:
+Whilst there are limits to what can be achieved within the scope of this technical test, the following are areas that could improve the application;
+
+- pagination, currently only supports 100 images
+- error handling and user feedback for events and votes
+- file upload validation on client side
+- refactor user service into redux slice
+- units testing of services and dispatch
+- offline support
+
 ## Project setup
 Installs dependencies, basic setup using parcel-bundler
 
