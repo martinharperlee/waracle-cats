@@ -10,7 +10,7 @@ Create React App - React, Redux, Redux Toolkit, Typescript
 Notable packages - nanoid, react-dropzone, react-icons, react-router-dom
 
 ### CSS:
-SASS & BEM - chosen to demonstrates knowledge of css methodologies, could have also used vanilla css and styled components
+SASS & BEM - chosen to demonstrate knowledge of css methodologies, could have also used vanilla css and styled components
 
 ### Tests:
 Jest - A simple set of unit tests for component logic
@@ -31,7 +31,7 @@ When considering accessibility the additional practices have been deployed;
 - Lighthouse testing
 
 ### Support:
-This test has been built without the requirments of legacy browsers support, its been tested on the latest versions of;
+This test has been built without the requirements of legacy browsers support, it has been tested on the latest versions of;
 
 - Chrome Mac Desktop
 - Chrome Android
@@ -52,7 +52,7 @@ Installs dependencies, basic setup using parcel-bundler
 
 #### `yarn`
 
-Please add .env.local file to the project this must contain the following, with you own api key
+Please add .env.local file to the project- this must contain the following, with your own api key
 
 #### `REACT_APP_API_KEY=XXXX`
 #### `REACT_APP_API_BASE_URL=https://api.thecatapi.com/v1`
